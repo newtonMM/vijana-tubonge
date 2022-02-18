@@ -17,14 +17,14 @@ const data = [
     imageUrl: image2,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption: "'cause an act of charity creates and endless ripple",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
     imageUrl: image1,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption: "Every prominent achiever is inspired by a brilliant mentor",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
