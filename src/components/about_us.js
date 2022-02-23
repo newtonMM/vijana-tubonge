@@ -83,12 +83,12 @@ const AboutUs = () => {
     ));
 
   return (
-    <div className="grid place-items-center lg:py-10">
-      <div className="lg:text-center lg:px-10">
-        <h1 className="text-4xl text-teal-600 font-bold tracking-wide uppercase">
+    <div className="grid place-items-center lg:py-10 sm:items-center">
+      <div className="lg:text-center lg:px-10 sm:items-center">
+        <h1 className="text-4xl text-teal-600 font-bold tracking-wide uppercase text-center">
           About us
         </h1>
-        <p className="mt-2 text-3xl leading-8 font-semibold tracking-tight text-gray-900 sm:text-4xl">
+        <p className="mt-2 text-3xl text-center text-teal-600 leading-8 font-semibold tracking-tight sm:text-4xl">
           Vijana Tubonge is a community based organization registered under the
           Kenyan law. The youth led organization involves itself on the
           following issues; Health, Environment, Mentorship, Charity, Talent and

@@ -96,15 +96,15 @@ const Navbar = () => {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="bg-teal-700 px-2 pt-2 pb-3 space-y-1">
               {data.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? "bg-gray-300 text-blue-700"
+                      : "text-pink-500 hover:bg-gray-700 hover:text-pink",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

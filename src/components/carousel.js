@@ -52,7 +52,7 @@ const LandingPage = () => {
     data.map((itms, index) => (
       <div
         key={index}
-        className="flex items-start bg-white mx-auto max-w-7xl px-4  lg:h-full sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 "
+        className="flex  bg-white mx-auto max-w-7xl px-4  lg:h-full sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:items-center"
       >
         <div className="flex-grow sm:text-center lg:text-left">
           <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
@@ -71,7 +71,7 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex-grow items-start lg:relative h-1/2 w-2/4">
+        <div className="invisible md:visible flex-grow items-start lg:relative h-1/2 w-2/4">
           <img
             className=" sm:h-72 md:h-96 lg:w-auto lg:h-1/2 rounded"
             src={itms.imageUrl}
@@ -82,8 +82,8 @@ const LandingPage = () => {
     ));
 
   const lowerSettings = {
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
+    autoplaySpeed: 4000,
     infinite: true,
     pauseOnHover: true,
     slidesToShow: 1,
@@ -113,7 +113,7 @@ const LandingPage = () => {
   };
 
   return (
-    <main className="lg:h-4/5 lg:py-10 shadow-inner">
+    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pb-5">
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
     </main>
   );
