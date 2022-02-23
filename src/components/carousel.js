@@ -114,7 +114,7 @@ const LandingPage = () => {
   };
 
   return (
-    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pb-5">
+    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pt-3">
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
     </main>
   );

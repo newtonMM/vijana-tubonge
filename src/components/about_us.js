@@ -84,11 +84,11 @@ const AboutUs = () => {
 
   return (
     <div className="grid place-items-center lg:py-10 sm:items-center">
-      <div className="lg:text-center lg:px-10 sm:items-center">
+      <div className="lg:text-center lg:px-10 sm:items-center sm:mx-3">
         <h1 className="text-4xl text-teal-600 font-bold tracking-wide uppercase text-center">
           About us
         </h1>
-        <p className="mt-2 text-3xl text-center text-teal-600 leading-8 font-semibold tracking-tight sm:text-4xl">
+        <p className="mt-2 text-3xl text-center text-teal-600 leading-6 font-sm tracking-normal sm:text-4xl">
           Vijana Tubonge! Vijana Tubonge is a Community Based Organization,
           registered under the Kenyan Law. The Organization is based in
           Kirinyaga County. We are a great team of youths who by the help of our
