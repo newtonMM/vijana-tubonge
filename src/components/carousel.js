@@ -31,14 +31,15 @@ const data = [
     imageUrl: image3,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption:
+      " To maintain and promote health, not only physically but also mentally, emotionally, socially and spiritually.",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
     imageUrl: image4,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption: " cause an act of charity creates and endless ripple",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
