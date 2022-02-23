@@ -5,7 +5,7 @@ const data = [
   {
     title: "TALENT AND INNOVATION PILLAR",
     content:
-      "Talent and innovation as a pillar in vijana tubonge organisation gives the youth a chance to ‘think outside the box’ and allows them to develop new ideas that are in line with the current era of technological  advancement.",
+      "Under Director Julius Mutugi Talent and innovation as a pillar in vijana tubonge organisation gives the youth a chance to think outside the box and allows them to develop new ideas that are in line with the current era of technological  advancement",
     btn_link: "intagram.com",
     btn_caption: "Learn More",
     image_url:
@@ -14,7 +14,7 @@ const data = [
   {
     title: " CHARITY PILLAR  ",
     content:
-      "To improve the charity’s brand image and engagement with its donors and sponsors",
+      "Our charity pillar under Director Carol Wamuyu serves the most vulnerable in the society and ensures that peoples’ human rights and needs are met. We have distributed sanitary towels to the less privileged in different villages in Tebere ward and recently through the Nilishe Charity Event, we have fed street kids and given them Christmas gift hampers. We have the chapter pillar under Director Cynthia Wambui that aids in expanding the Vijana Tubonge family in other constituencies, counties, and with future plans of going international. Indeed the future is so bright, It blinds my eyes ~Oprah Winfrey",
     btn_link: "",
     btn_caption: " Learn More",
     image_url:
@@ -22,9 +22,9 @@ const data = [
   },
   {
     title: "MENTORSHIP PILLAR",
-    content:
-      "Mentorship pillar is a subsidiary of the larger Vijana Tubonge ORG based in Wanguru Kirinyaga County. It is therefore vital to have a mentorship pillar which continues this noble work of inspiring a better community,  ",
-    btn_link: "",
+    content: "",
+    btn_link:
+      "Under his leadership Director Kevin Gitimu, aims at touching three aspects of the human life which are; the social, economic and the civil aspect. It will attain this by holding mentorship talks in schools both primary and secondary, organizing seminars on savings and financial literacy, and also civic education on human rights, the constitution, leadership among other vital information. This pillar works hand in hand with the health pillar, environment and charity",
     btn_caption: "Learn More",
     image_url:
       "https://images.unsplash.com/photo-1644132246573-bc75ce0a2946?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fG1lbnRvcnNoaXB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
@@ -32,7 +32,7 @@ const data = [
   {
     title: "THE HEALTH PILLAR",
     content:
-      "To improve the quality of life through promoting health and wellness of individuals and communities that we are honored to serve. ",
+      "Headed by Director Mary Mwangi aims at promoting the overall well-being and healthy living through early detection and prevention of diseases like cancer and HIV, treatment of patients and vaccinations of covid 19, issuing of PREP and PEP, distribution of sanitary towels as well as sanitary packets for boys and sparking uncomfortable conversations surrounding mental health, sexual reproductive health and gender-based violence. ",
     btn_link: "",
     btn_caption: "Learn More",
     image_url: health,
@@ -40,7 +40,7 @@ const data = [
   {
     title: "THE ENVRONMENT PILLAR.",
     content:
-      "Vijana Tubonge Environment pillar is a docket which is determined to deal with climatic conditions and ensure that our environment is conducive to everyone",
+      "Under her leadership Director Prudence Gichuki. The pillar’s major focus is on creating awareness about nature and making the environment greener and cleaner. So far, in the month of December 2021, when the pillars were created, the environment pillar had planted 40 trees at the river bank of River Thiba, and a further 60 trees in S.Ngariama, totaling to 100 trees. Plans are underway for creation of carbon sinks, rehabilitation of forests and water catchment areas, promoting greener and cleaner sources of energy and general greening of the earth",
     btn_link: "intagram.com",
     btn_caption: "Learn More",
     image_url:
@@ -84,15 +84,20 @@ const AboutUs = () => {
 
   return (
     <div className="grid place-items-center lg:py-10 sm:items-center">
-      <div className="lg:text-center lg:px-10 sm:items-center">
+      <div className="lg:text-center lg:px-10 sm:items-center sm:mx-3">
         <h1 className="text-4xl text-teal-600 font-bold tracking-wide uppercase text-center">
           About us
         </h1>
-        <p className="mt-2 text-3xl text-center text-teal-600 leading-8 font-semibold tracking-tight sm:text-4xl">
-          Vijana Tubonge is a community based organization registered under the
-          Kenyan law. The youth led organization involves itself on the
-          following issues; Health, Environment, Mentorship, Charity, Talent and
-          Innovation and Chapters
+        <p className="mt-2 text-3xl text-center text-teal-600 leading-6 font-sm tracking-normal sm:text-base">
+          Vijana Tubonge! Vijana Tubonge is a Community Based Organization,
+          registered under the Kenyan Law. The Organization is based in
+          Kirinyaga County. We are a great team of youths who by the help of our
+          six pillars engage in issues affecting the youths and the society at
+          large. The organization is headed by the President Charles Karuga
+          Kamau deputized by Keziah Kamau, The Chief Director Operation Benson
+          Gachoki Mukono and the Chief Finance Officer Vincent Kariuki Muriithi.
+          We are committed in Practicing Community Social Responsibility through
+          the help of our six pillars
         </p>
       </div>
       <div className="grid gap-4 place-items-center lg:grid-cols-3 ">

@@ -31,14 +31,15 @@ const data = [
     imageUrl: image3,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption:
+      " To maintain and promote health, not only physically but also mentally, emotionally, socially and spiritually.",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
     imageUrl: image4,
   },
   {
-    caption: " cause an act of charity creates and endless reaple",
+    caption: " cause an act of charity creates and endless ripple",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
@@ -113,7 +114,7 @@ const LandingPage = () => {
   };
 
   return (
-    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pb-5">
+    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pt-3">
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
     </main>
   );
