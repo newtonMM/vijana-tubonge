@@ -82,7 +82,7 @@ const LandingPage = () => {
     ));
 
   const lowerSettings = {
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     infinite: true,
     pauseOnHover: true,
