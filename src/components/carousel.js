@@ -106,7 +106,7 @@ const LandingPage = () => {
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
+          arrows: true,
           swipeToSlide: true,
         },
       },
