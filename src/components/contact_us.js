@@ -44,9 +44,9 @@ const Contacts = () => {
       <h1 className="text-center text-4xl font-bold text-teal-700">
         Contacts{" "}
       </h1>
-      <div className="flex lg:mx-20">
+      <div className="flex flex-col md:md:flex-row lg:mx-20 ">
         <div className="lg:mx-20">{contactCards}</div>
-        <div>
+        <div className="lex-col md:md:flex-row">
           <Formik
             validationSchema={ContactSchema}
             initialValues={{ name: "", phone: "", email: "", message: "" }}
