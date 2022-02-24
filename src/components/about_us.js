@@ -93,11 +93,14 @@ const AboutUs = () => {
           registered under the Kenyan Law. The Organization is based in
           Kirinyaga County. We are a great team of youths who by the help of our
           six pillars engage in issues affecting the youths and the society at
-          large. The organization is headed by the President Charles Karuga
-          Kamau deputized by Keziah Kamau, The Chief Director Operation Benson
-          Gachoki Mukono and the Chief Finance Officer Vincent Kariuki Muriithi.
-          We are committed in Practicing Community Social Responsibility through
-          the help of our six pillars
+          large.
+        </p>
+        <p className="mt-2 text-3xl text-center text-teal-600 leading-6 font-sm tracking-normal sm:text-base sm:mx-5 px-5">
+          The organization is headed by the President Charles Karuga Kamau
+          deputized by Keziah Kamau, The Chief Director Operation Benson Gachoki
+          Mukono and the Chief Finance Officer Vincent Kariuki Muriithi. We are
+          committed in Practicing Community Social Responsibility through the
+          help of our six pillars
         </p>
       </div>
       <div className="grid gap-4 place-items-center lg:grid-cols-3 ">
