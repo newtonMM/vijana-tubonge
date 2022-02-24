@@ -55,13 +55,13 @@ const LandingPage = () => {
         key={index}
         className="flex  bg-white mx-auto max-w-7xl px-4  lg:h-full sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:items-center"
       >
-        <div className="flex-grow sm:text-center lg:text-left">
+        <div className="flex-grow sm:text-center lg:text-left my-5">
           <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
             <span className="flex-grow text-teal-700 xl:inline">
               {itms.caption.toUpperCase()}
             </span>
           </h1>
-          <div className=" flex-grow sm:mt-8 sm:justify-center lg:justify-start">
+          <div className=" flex-grow sm:mt-8 sm:justify-center lg:justify-start my-5">
             <div className="rounded-md shadow lg:w-48">
               <a
                 href={itms.btn_link}
@@ -114,7 +114,7 @@ const LandingPage = () => {
   };
 
   return (
-    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5 sm:justify-center sm:items-center sm:pt-3">
+    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5  sm:items-center sm:my-3">
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
     </main>
   );
