@@ -32,7 +32,7 @@ const data = [
   },
   {
     caption:
-      " To maintain and promote health, not only physically but also mentally, emotionally, socially and spiritually.",
+      " To maintain and promote health,physically mentally, emotionally, socially and spiritually.",
     btn_link:
       "https://cdn.pixabay.com/photo/2020/05/31/11/19/firemen-5242315_960_720.jpg",
     btn_caption: " contact us",
@@ -114,9 +114,9 @@ const LandingPage = () => {
   };
 
   return (
-    <main className="lg:h-4/5 lg:py-10 shadow-inner md:py-5  sm:items-center sm:my-3">
+    <div className="lg:h-4/5 lg:py-10 shadow-inner  sm:items-center sm:my-3 sm:pt-10">
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
-    </main>
+    </div>
   );
 };
 
