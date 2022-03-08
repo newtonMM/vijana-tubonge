@@ -13,15 +13,15 @@ const data = [
   {
     icon_url: Location,
     heading: "Location",
-    content: "kenya, Nairobi kimathi street",
+    content: "kenya, Kirinyaga Mwea",
   },
   {
     icon_url: Email,
-    content: "VijanaTubone@info",
+    content: "contactvijanatubonge@gmail.com",
   },
   {
     icon_url: Call,
-    content: "0798222222",
+    content: "0708343082",
   },
 ];
 const Contacts = () => {
