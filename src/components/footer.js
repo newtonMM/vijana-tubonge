@@ -46,7 +46,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="https://www.facebook.com/MaishaYouth"
+                    href="https://www.facebook.com/pages/category/Charity-Organization/Vijana-Tubonge-114715516901517/"
                     className="text-teal-700 text-xl hover:text-pink-500"
                   >
                     <img
@@ -60,7 +60,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="https://twitter.com/MaishaYouth"
+                    href="https://twitter.com/vtubonge"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     <img
@@ -74,7 +74,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="https://www.instagram.com/maishayouth/"
+                    href="https://www.instagram.com/vijana_tubongeke/"
                     className="text-teal-700 text-xl hover:text-teal-500"
                   >
                     <img
@@ -150,7 +150,7 @@ const Footer = () => {
           <div className="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
             <div className="sm:w-2/3 text-center py-6">
               <p className="text-sm text-teal-600 font-bold mb-2">
-                © 2021 by Newton Muthigani
+                © 2022 by Newton Muthigani
               </p>
             </div>
           </div>

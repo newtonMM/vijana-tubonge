@@ -11,10 +11,11 @@ const data = [
 
   {
     name: "About us ",
-    link: "#who we are",
+    link: "#about_us",
     current: false,
   },
-  { name: "Services", link: "#services", current: false },
+  { name: "Events", link: "#events", current: false },
+  { name: "Gallery", link: "#gallery", current: false },
   {
     name: "Contact",
     link: "#contacts",
