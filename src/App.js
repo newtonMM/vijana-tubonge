@@ -5,6 +5,7 @@ import AboutUs from "./components/about_us";
 import Gallery from "./components/gallery";
 import Footer from "./components/footer";
 import Contacts from "./components/contact_us";
+import Events from "./components/events";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Carousel />
       <AboutUs />
+      <Events />
       {/* <Gallery /> */}
       <Contacts />
       <Footer />

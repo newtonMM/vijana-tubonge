@@ -53,7 +53,7 @@ const LandingPage = () => {
     data.map((itms, index) => (
       <div
         key={index}
-        className="flex  bg-white mx-auto max-w-7xl px-4  lg:h-full sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:items-center"
+        className="flex bg-white mx-auto max-w-7xl px-4  lg:h-full sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:items-center"
       >
         <div className="flex-grow sm:text-center lg:text-left my-5">
           <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl">
