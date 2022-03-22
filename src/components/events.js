@@ -56,33 +56,32 @@ const Events = () => {
         </p>
       </div>
     ));
-  const lowerSettings = {
+  const Settings = {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "80px",
+    centerPadding: "100px",
     slidesToShow: 3,
     speed: 500,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 768,
         settings: {
           arrows: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          arrows: true,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: true,
-          swipeToSlide: true,
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
         },
       },
     ],
@@ -93,9 +92,7 @@ const Events = () => {
       <h1 className="font-bold  uppercase text-center text-teal-600 text-4xl">
         Upcoming Events{" "}
       </h1>
-      {data && data.length > 0 && (
-        <Slick {...lowerSettings}>{eventsCard}</Slick>
-      )}
+      {data && data.length > 0 && <Slick {...Settings}>{eventsCard}</Slick>}
     </div>
   );
 };

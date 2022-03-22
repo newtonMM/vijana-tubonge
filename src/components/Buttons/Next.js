@@ -1,12 +1,15 @@
 import React from "react";
-import NextImg from "../../assets/icons/next.png";
+import { ArrowRightIcon } from "@heroicons/react/outline";
 
 const Next = (props) => {
   const { onClick } = props;
 
   return (
-    <div className="absolute block w-14 h-2 " onClick={() => onClick()}>
-      <img src={NextImg}></img>
+    <div
+      className="absolute block -translate-y-1/2 top-2 cursor-pointer right-[-5%]"
+      onClick={() => onClick()}
+    >
+      <ArrowRightIcon className="h-10 w-14 text-teal-400" />
     </div>
   );
 };

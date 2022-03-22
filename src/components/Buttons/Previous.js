@@ -1,11 +1,14 @@
 import React from "react";
-import Prev from "../../assets/icons/previous.png";
+import { ArrowLeftIcon } from "@heroicons/react/outline";
 
 const Previous = (props) => {
   const { onClick } = props;
   return (
-    <div className="absolute block w-14 h-2" onClick={() => onClick()}>
-      <img src={Prev}></img>
+    <div
+      className="absolute block -translate-y-1/2 top-2 cursor-pointer left-[-8%]"
+      onClick={() => onClick()}
+    >
+      <ArrowLeftIcon className="h-10 w-14 text-teal-400" />
     </div>
   );
 };
