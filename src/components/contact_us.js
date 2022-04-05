@@ -17,10 +17,12 @@ const data = [
   },
   {
     icon_url: Email,
+    heading: "Email",
     content: "contactvijanatubonge@gmail.com",
   },
   {
     icon_url: Call,
+    heading: "Telephone",
     content: "0708343082",
   },
 ];
@@ -31,22 +33,22 @@ const Contacts = () => {
     data &&
     data.map((itms, index) => (
       <div key={index} className="my-5">
-        <div>
-          <img className="h-20 w-15" src={itms.icon_url} />
-          <h1 className="text-base text-teal-700">{itms.heading}</h1>
-          <p className="text-base text-teal-700">{itms.content}</p>
-        </div>
+        <img className="h-20 w-15" src={itms.icon_url} />
+        <h1 className="text-base text-teal-700 ">{itms.heading}</h1>
+        <p className="text-base text-teal-700 ">{itms.content}</p>
       </div>
     ));
 
   return (
-    <div className="lg:">
+    <div className="grid place-items-center">
       <h1 className="text-center text-4xl font-bold text-teal-700">
         Contacts{" "}
       </h1>
-      <div className="flex flex-col md:md:flex-row lg:mx-20 ">
-        <div className="lg:mx-20">{contactCards}</div>
-        <div className="lex-col md:md:flex-row">
+      <div className="grid gap-4  lg:grid-cols-3 place-items-center">
+        {contactCards}
+      </div>
+      <div className="flex flex-col ">
+        <div className="flex-col ">
           <Formik
             validationSchema={ContactSchema}
             initialValues={{ name: "", phone: "", email: "", message: "" }}
@@ -62,8 +64,8 @@ const Contacts = () => {
             }) => (
               <>
                 <form>
-                  <p className="mt-10 text-semibold text-gray-400 text-3xl">
-                    please leave a message{" "}
+                  <p className="mt-10 text-bold text-teal-700 text-3xl text-center">
+                    Please Leave a Message{" "}
                   </p>
                   <div className="lg:h-auto flex flex-col mt-5">
                     <div className="container max-w-auto mx-auto flex-1 flex flex-col items-center justify-center px-2">

@@ -56,6 +56,13 @@ const data = [
 ];
 
 const AboutUs = () => {
+  function content_trim(str) {
+    if (str.length > 200) {
+      return str.slice(0, 200);
+    } else {
+      return str;
+    }
+  }
   const cards =
     data &&
     data.map((itms, index) => (
@@ -70,7 +77,7 @@ const AboutUs = () => {
         />
 
         <p className="mt-2 lg:text-xl leading-8  tracking-tight text-gray-900 sm:text-4xl overflow-hidden">
-          {itms.content}
+          {content_trim(itms.content)} ..... read more below
         </p>
         <a
           href={itms.btn_link}
