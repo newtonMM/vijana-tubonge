@@ -11,45 +11,43 @@ const IMAGES = [
   {
     src: image1,
     thumbnail: image1,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-    isSelected: true,
+    thumbnailWidth: 272,
+    thumbnailHeight: "28vh",
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: image2,
     thumbnail: image2,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
-    isSelected: true,
+    thumbnailWidth: 272,
+    thumbnailHeight: "28vh",
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: image3,
-    humbnail: image3,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
+    thumbnail: image3,
+    thumbnailWidth: 272,
+    thumbnailHeight: "28vh",
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: image4,
     thumbnail: image4,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
+    thumbnailWidth: 272,
+    thumbnailHeight: "28vh",
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
   {
     src: image5,
     thumbnail: image5,
-    thumbnailWidth: 320,
-    thumbnailHeight: 174,
+    thumbnailWidth: 272,
+    thumbnailHeight: "28vh",
     caption: "After Rain (Jeshu John - designerspics.com)",
   },
 ];
 
 function gallery() {
   return (
-    <div>
+    <div className="container overflow-hidden w-full h-80">
       <Gallery images={IMAGES} maxRows={4} rowHeight="28vh" />
     </div>
   );
