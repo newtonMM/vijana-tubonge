@@ -15,25 +15,25 @@ const data = [
   },
   {
     event_name: "Pads Drive",
-    event_description: "Some text hear",
+    event_description: "pads donation",
     date: "01/01 2022",
     poster: img,
   },
   {
     event_name: "Rivers of joy",
-    event_description: "Some text hear",
+    event_description: "childrens home visit",
     date: "01/01 2022",
     poster: img,
   },
   {
     event_name: "General Meeting",
-    event_description: "Some text hear",
+    event_description: "Members meeting",
     date: "01/01 2022",
     poster: img,
   },
   {
     event_name: "General Meeting",
-    event_description: "Some text hear",
+    event_description: "Some other meeting",
     date: "01/01 2022",
     poster: img,
   },
@@ -43,7 +43,7 @@ const Events = () => {
   const eventsCard =
     data &&
     data.map((itms, index) => (
-      <div key={index} className="my-5 w-52 h-72">
+      <div key={index} className="my-5 w-52 h-72 place-self-center">
         <p className="text-2xl text-gray-900 leading-8  tracking-tight">
           {itms.event_name}
         </p>
@@ -56,43 +56,64 @@ const Events = () => {
         </p>
       </div>
     ));
-  const Settings = {
-    className: "center",
-    centerMode: true,
+  const settings = {
     infinite: true,
-    centerPadding: "100px",
-    slidesToShow: 3,
     speed: 500,
+    slidesToShow: 3,
+    mobileFirst: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
-          arrows: true,
-          centerMode: true,
-          centerPadding: "40px",
           slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          infinite: true,
+          dots: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
           slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: true,
         },
       },
     ],
   };
 
   return (
-    <div className="">
-      <h1 className="font-bold  uppercase text-center text-teal-600 text-4xl">
-        Upcoming Events{" "}
-      </h1>
-      {data && data.length > 0 && <Slick {...Settings}>{eventsCard}</Slick>}
+    <div className="container m-auto px-20">
+      <div>
+        <h1 className="font-bold  uppercase text-center text-teal-600 text-4xl place-self-center">
+          Upcoming Events{" "}
+        </h1>
+      </div>
+      <div className="place-self-center">
+        {data && data.length > 0 && <Slick {...settings}>{eventsCard}</Slick>}
+      </div>
+
+      <div className="place-self-center mt-5 ">
+        <a
+          href=""
+          className="mt-5 mb-2  rounded-md shadow lg:w-20  items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
+        >
+          See all events
+        </a>
+      </div>
     </div>
   );
 };

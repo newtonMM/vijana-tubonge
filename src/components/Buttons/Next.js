@@ -6,7 +6,7 @@ const Next = (props) => {
 
   return (
     <div
-      className="absolute block -translate-y-1/2 top-2 cursor-pointer right-[-5%]"
+      className="absolute block translate-y-[10rem] top-2 cursor-pointer right-[5%]"
       onClick={() => onClick()}
     >
       <ArrowRightIcon className="h-10 w-14 text-teal-400" />
