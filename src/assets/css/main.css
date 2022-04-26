@@ -636,6 +636,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col {
   flex-direction: column !important;
 }
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
 .place-items-center {
   place-items: center !important;
 }
@@ -1148,10 +1151,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  }
-
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .lg\:justify-start {

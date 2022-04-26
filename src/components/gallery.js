@@ -47,7 +47,10 @@ const IMAGES = [
 
 function gallery() {
   return (
-    <div className="container overflow-hidden w-full h-80">
+    <div className="container overflow-hidden h-80">
+      {/* <h1 className=" py-2 font-bold  uppercase text-center text-teal-600 text-xl place-self-center">
+        Pictures
+      </h1> */}
       <Gallery images={IMAGES} maxRows={4} rowHeight="28vh" />
     </div>
   );
