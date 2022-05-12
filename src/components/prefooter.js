@@ -8,7 +8,7 @@ const prefooter = () => {
       <h1 className=" py-2 font-bold  uppercase text-center text-teal-600 text-4xl place-self-center">
         Gallery
       </h1>
-      <div className="flex flex-wrap">
+      <div className="flex md:flex-row flex-col">
         <Gallery />
         <Videos />
       </div>
