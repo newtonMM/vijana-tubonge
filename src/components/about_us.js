@@ -66,7 +66,7 @@ const AboutUs = () => {
   const cards =
     data &&
     data.map((itms, index) => (
-      <div key={index} className="aspect-square mx-8 p-4 mt-5  shadow-lg ">
+      <div key={index} className="aspect-square mx-8  shadow-lg ">
         <p className="lg:text-2xl text-teal-600 font-bold ">
           {itms.title.toUpperCase()}
         </p>
@@ -89,8 +89,8 @@ const AboutUs = () => {
     ));
 
   return (
-    <div className="grid place-items-center lg:py-10 sm:items-center">
-      <div className="container mx-auto px-6 flex flex-col justify-between items-center relative py-8">
+    <div className="grid place-items-center">
+      <div className="container  flex flex-col justify-between items-center ">
         <div className="flex flex-col">
           <h1 className="font-bold w-full uppercase text-center text-teal-600 text-4xl sm:text-5xl">
             About us
