@@ -44,10 +44,10 @@ const Events = () => {
     data &&
     data.map((itms, index) => (
       <div key={index} className="my-5 w-52 h-72 place-self-center">
-        <p className="text-2xl text-gray-900 leading-8  tracking-tight">
+        <p className="text-2xl text-gray-900 leading-8 tracking-tight mb-2 font-bold">
           {itms.event_name}
         </p>
-        <img className="h-full w-full object-center" src={itms.poster} />
+        <img className="h-full w-full object-center mb-2" src={itms.poster} alt='poster' />
         <p className="text-xl leading-8  tracking-tight text-gray-900">
           {itms.event_description}
         </p>
@@ -67,7 +67,7 @@ const Events = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
@@ -96,9 +96,9 @@ const Events = () => {
   };
 
   return (
-    <div className="container m-auto px-20">
+    <div id="events" className="container m-auto sm:px-20 px-8 mb-24 pt-16">
       <div>
-        <h1 className="font-bold  uppercase text-center text-teal-600 text-4xl place-self-center">
+        <h1 className="font-bold uppercase text-center text-teal-600 text-4xl place-self-center py-12">
           Upcoming Events{" "}
         </h1>
       </div>
@@ -106,10 +106,10 @@ const Events = () => {
         {data && data.length > 0 && <Slick {...settings}>{eventsCard}</Slick>}
       </div>
 
-      <div className="place-self-center mt-5 ">
+      <div className="flex justify-center mt-8">
         <a
-          href=""
-          className="mt-5 mb-2  rounded-md shadow lg:w-20  items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
+          href="/"
+          className="mt-7 mb-2 rounded-md shadow items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10 px-4 py-2"
         >
           See all events
         </a>

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import React, { useEffect, useState } from "react";
+import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import Logo from "../assets/logo.jpg";
+import { useLocation } from "react-router-dom";
+
 const data = [
   {
     name: "Home",
@@ -32,20 +34,30 @@ const Navbar = () => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
+
+  const [activeLink, setActiveLink] = useState('')
+
+  const location = useLocation()
+
+  useEffect(() => {
+    setActiveLink(location.hash)
+  }, [location])
+
   return (
-    <Disclosure as="nav" className="h-24 bg-white sticky top-0 ">
+    <Disclosure as="nav" className="h-24 bg-white sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 py-4 sm:px-6 lg:px-8 ">
             <div className="relative flex items-center justify-between h-16">
               <div className="flex ">
                 <a
-                  href="#"
+                  href="/#"
                   className="flex items-center  text-gray-700 hover:text-gray-900"
                 >
                   <img
                     className="h-20 w-20 mr-20  text-blue-400"
                     src={Logo}
+                    alt='logo'
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -58,10 +70,10 @@ const Navbar = () => {
                       key={index}
                       href={itms.link}
                       className={classNames(
-                        itms.current
-                          ? "bg-gray-200 text-blue-600 font-bold  rounded transition duration-300 hover:bg-gray-400 py-2 px-3  lg:text-xl  md:text-base  "
-                          : "text-teal-700 lg:text-xl md:text-base font-sans font-bold hover:bg-gray-200  transition duration-300",
-                        "px-4 py-3  ml-5 md:px-1"
+                        activeLink === itms.link
+                          ? "text-teal-600 underline decoration-blue-600 underline-offset-8	decoration-4"
+                          : "text-teal-700 font-sans  hover:bg-gray-200  transition duration-300",
+                        "px-4 py-3  ml-5 md:px-1 font-bold lg:text-xl md:text-base whitespace-nowrap"
                       )}
                       aria-current={itms.current ? "page" : undefined}
                     >
@@ -72,11 +84,11 @@ const Navbar = () => {
               </div>
 
               <div className="hidden md:flex items-center space-x-1">
-                <a href="" className="py-5 px-3 text-teal-700">
+                <a href="/#" className="py-5 px-3 text-teal-700">
                   Login
                 </a>
                 <a
-                  href=""
+                  href="/#"
                   className="py-2 px-3 bg-Emerald-700 hover:bg-Emerald-700 text-teal-700 hover:text-Emerald-700 rounded transition duration-300"
                 >
                   Signup
