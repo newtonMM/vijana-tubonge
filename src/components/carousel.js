@@ -61,10 +61,17 @@ const LandingPage = () => {
               {itms.caption.toUpperCase()}
             </span>
           </h1>
+<<<<<<< HEAD
+          <div className="rounded-md  md:pt-10 md:self-start pt-2 lg:w-48">
+            <a
+              href={itms.btn_link}
+              className="justify-center  sm:px-5 border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
+=======
           <div className="rounded-md md:pt-10 md:self-start pt-2 ">
             <a
               href={itms.btn_link}
               className="justify-center  border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-teal-700 md:py-4 md:text-lg md:px-10 px-4 py-2"
+>>>>>>> c0f9343d49e2a181e2d3aaaff3cb581d957122d4
             >
               {itms.btn_caption.toUpperCase()}
             </a>

@@ -27,27 +27,25 @@ const data = [
   },
 ];
 const Contacts = () => {
-  const MessageSubmit = () => { };
+  const MessageSubmit = () => {};
 
   const contactCards =
     data &&
     data.map((itms, index) => (
       <div key={index} className="my-5">
-        <img className="h-20 w-15" src={itms.icon_url} alt='icon' />
+        <img className="h-20 w-15" src={itms.icon_url} />
         <h1 className="text-base text-teal-700 ">{itms.heading}</h1>
         <p className="text-base text-teal-700 ">{itms.content}</p>
       </div>
     ));
 
   return (
-    <div id="contacts" className="grid place-items-center mb-24 pt-16">
-      <h1 className="text-center text-4xl font-bold text-teal-700 py-12">
+    <div className="grid place-items-center">
+      <h1 className="text-center text-4xl font-bold text-teal-700">
         Contacts{" "}
       </h1>
-      <div className="place-items-center">
-        <div className="grid gap-4 lg:grid-cols-3">
-          {contactCards}
-        </div>
+      <div className="grid gap-4  lg:grid-cols-3 place-items-center">
+        {contactCards}
       </div>
       <div className="flex flex-col ">
         <div className="flex-col ">
