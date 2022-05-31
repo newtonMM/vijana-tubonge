@@ -10,14 +10,14 @@ const Footer = () => {
       <footer className="footer bg-white relative pt-1 border-b-2 border-teal-700">
         <div className="container mx-auto px-6">
           <div className="sm:flex sm:mt-8">
-            <div className="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+            <div className="mt-8 sm:mt-0 sm:w-full w-8/12 sm:px-8 flex flex-col md:flex-row justify-between my-0 mx-auto">
               <div className="flex flex-col">
                 <span className="font-bold text-teal-600 uppercase mb-2">
                   Vijana Tubonge
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-teal-700  text-xl hover:text-pink-500"
                   >
                     Blog
@@ -25,7 +25,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-teal-700  text-xl hover:text-pink-500"
                   >
                     Login
@@ -33,7 +33,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-teal-700  text-xl hover:text-pink-500"
                   >
                     Sign up
@@ -47,11 +47,14 @@ const Footer = () => {
                 <span className="my-2">
                   <a
                     href="https://www.facebook.com/pages/category/Charity-Organization/Vijana-Tubonge-114715516901517/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-teal-700 text-xl hover:text-pink-500"
                   >
                     <img
                       className="h-10 w-12 mr-20  text-teal-400"
                       src={Facebook}
+                      alt='Facebook'  
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -61,11 +64,14 @@ const Footer = () => {
                 <span className="my-2">
                   <a
                     href="https://twitter.com/vtubonge"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     <img
                       className="h-10 w-12 mr-20  text-teal-400"
                       src={Twitter}
+                      alt='Twitter'
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -75,11 +81,14 @@ const Footer = () => {
                 <span className="my-2">
                   <a
                     href="https://www.instagram.com/vijana_tubongeke/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-teal-700 text-xl hover:text-teal-500"
                   >
                     <img
                       className="h-10 w-12 mr-20  text-teal-400"
                       src={Instagram}
+                      alt='Instagram'
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -90,12 +99,13 @@ const Footer = () => {
               <div className="flex flex-col">
                 <span className="font-bold text-gray-700 uppercase mt-4 md:mt-0 mb-2">
                   <a
-                    href="#"
+                    href="/#home"
                     className="flex items-center  text-gray-700 hover:text-gray-900"
                   >
                     <img
                       className="h-30 w-36 mr-20  text-teal-400"
                       src={Logo}
+                      alt='Logo'
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -104,7 +114,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#home"
                     className="text-teal-700  text-xl hover:text-teal-500 "
                   >
                     Home
@@ -112,7 +122,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#about_us"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     About Us
@@ -120,7 +130,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     Service
@@ -128,7 +138,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#contacts"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     Contact
@@ -136,7 +146,7 @@ const Footer = () => {
                 </span>
                 <span className="my-2">
                   <a
-                    href="#"
+                    href="/#"
                     className="text-teal-700  text-xl hover:text-teal-500"
                   >
                     Blog

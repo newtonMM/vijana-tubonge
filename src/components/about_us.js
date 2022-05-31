@@ -66,7 +66,7 @@ const AboutUs = () => {
   const cards =
     data &&
     data.map((itms, index) => (
-      <div key={index} className="aspect-square mx-8  shadow-lg ">
+      <div key={index} className="flex flex-col items-center text-center aspect-square sm:mx-8 shadow-lg p-6">
         <p className="lg:text-2xl text-teal-600 font-bold ">
           {itms.title.toUpperCase()}
         </p>
@@ -81,7 +81,7 @@ const AboutUs = () => {
         </p>
         <a
           href={itms.btn_link}
-          className="mt-5 mb-2  rounded-md shadow lg:w-auto flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10"
+          className="mt-5 mb-2 rounded-md shadow lg:w-auto flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10 px-4 py-2"
         >
           {itms.btn_caption.toUpperCase()}
         </a>
@@ -89,10 +89,10 @@ const AboutUs = () => {
     ));
 
   return (
-    <div className="grid place-items-center">
+    <div id="about_us" className="grid place-items-center mb-24 pt-16">
       <div className="container  flex flex-col justify-between items-center ">
-        <div className="flex flex-col">
-          <h1 className="font-bold w-full uppercase text-center text-teal-600 text-4xl sm:text-5xl">
+        <div className="flex flex-col mb-20">
+          <h1 className="font-bold w-full uppercase text-center text-teal-600 py-12 text-4xl sm:text-5xl">
             About us
           </h1>
           <p className="max-w-2xl mx-auto w-full text-xl  text-teal-600 text-center py-2">

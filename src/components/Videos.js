@@ -39,8 +39,8 @@ const Videos = () => {
     </div>
   ));
   return (
-    <div className="lg:shrink rounded-lg shadow-lg md:w-1/2 sm:flex-col w-full">
-      <h1 className=" py-2 font-bold  uppercase text-center text-teal-600 text-xl place-self-center">
+    <div className="lg:shrink rounded-lg shadow-lg md:w-1/2 sm:flex-col w-full sm:mt-0 mt-10">
+      <h1 className="py-6 font-bold  uppercase text-center text-teal-600 text-xl place-self-center">
         Videos
       </h1>
       {data.length && <Slick {...videoSettings}>{displayVideos}</Slick>}
