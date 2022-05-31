@@ -11,37 +11,32 @@ import image5 from "../assets/illustrations/slide5.svg";
 const data = [
   {
     caption: "Nothing For us without us ",
-    btn_link:
-      "#contacts",
+    btn_link: "#contacts",
     btn_caption: " join us",
     imageUrl: image2,
   },
   {
     caption: "'cause an act of charity creates and endless ripple",
-    btn_link:
-      "#contacts",
+    btn_link: "#contacts",
     btn_caption: " contact us",
     imageUrl: image1,
   },
   {
     caption: "Every prominent achiever is inspired by a brilliant mentor",
-    btn_link:
-      "#contacts",
+    btn_link: "#contacts",
     btn_caption: " contact us",
     imageUrl: image3,
   },
   {
     caption:
       "To maintain and promote health,physically mentally, emotionally, socially and spiritually.",
-    btn_link:
-      "#contacts",
+    btn_link: "#contacts",
     btn_caption: " contact us",
     imageUrl: image4,
   },
   {
     caption: "cause an act of charity creates and endless ripple",
-    btn_link:
-      "#contacts",
+    btn_link: "#contacts",
     btn_caption: " contact us",
     imageUrl: image5,
   },
@@ -61,17 +56,11 @@ const LandingPage = () => {
               {itms.caption.toUpperCase()}
             </span>
           </h1>
-<<<<<<< HEAD
-          <div className="rounded-md  md:pt-10 md:self-start pt-2 lg:w-48">
-            <a
-              href={itms.btn_link}
-              className="justify-center  sm:px-5 border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-teal-700 md:py-4 md:text-lg md:px-10"
-=======
+
           <div className="rounded-md md:pt-10 md:self-start pt-2 ">
             <a
               href={itms.btn_link}
               className="justify-center  border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-teal-700 md:py-4 md:text-lg md:px-10 px-4 py-2"
->>>>>>> c0f9343d49e2a181e2d3aaaff3cb581d957122d4
             >
               {itms.btn_caption.toUpperCase()}
             </a>
@@ -119,7 +108,10 @@ const LandingPage = () => {
   };
 
   return (
-    <div id="home" className="grow h-4/5 w-full place-items-center m-auto py-6 shadow-inner mb-24 pt-16">
+    <div
+      id="home"
+      className="grow h-4/5 w-full place-items-center m-auto py-6 shadow-inner mb-24 pt-16"
+    >
       {data && data.length > 0 && <Slick {...lowerSettings}>{display}</Slick>}
     </div>
   );

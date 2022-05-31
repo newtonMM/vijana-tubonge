@@ -1024,11 +1024,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column !important;
   }
 
-  .sm\:px-5 {
-    padding-left: 1.25rem !important;
-    padding-right: 1.25rem !important;
-  }
-
   .sm\:px-20 {
     padding-left: 5rem !important;
     padding-right: 5rem !important;
@@ -1157,10 +1152,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-auto {
     width: auto !important;
-  }
-
-  .lg\:w-48 {
-    width: 12rem !important;
   }
 
   .lg\:shrink {
