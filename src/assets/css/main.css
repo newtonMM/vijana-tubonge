@@ -605,8 +605,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-9\/12 {
   width: 75% !important;
 }
-.w-1\/4 {
-  width: 25% !important;
+.w-32 {
+  width: 8rem !important;
 }
 .w-52 {
   width: 13rem !important;
@@ -668,6 +668,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-4 {
   gap: 1rem !important;
+}
+.gap-10 {
+  gap: 2.5rem !important;
 }
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0 !important;
@@ -895,6 +898,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .underline {
   text-decoration-line: underline !important;
 }
+.no-underline {
+  text-decoration-line: none !important;
+}
 .decoration-blue-600 {
   text-decoration-color: #2563eb !important;
 }
@@ -934,8 +940,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 150ms !important;
 }
+.duration-700 {
+  transition-duration: 700ms !important;
+}
 .duration-300 {
   transition-duration: 300ms !important;
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 .hover\:bg-gray-300:hover {
   --tw-bg-opacity: 1 !important;
@@ -948,10 +960,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-yellow-500:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
-}
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity)) !important;
 }
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1 !important;
@@ -972,6 +980,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-white:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+.hover\:underline:hover {
+  text-decoration-line: underline !important;
+}
+.hover\:decoration-4:hover {
+  text-decoration-thickness: 4px !important;
+}
+.hover\:underline-offset-8:hover {
+  text-underline-offset: 8px !important;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent !important;
