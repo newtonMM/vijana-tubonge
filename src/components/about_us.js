@@ -9,7 +9,7 @@ const data = [
     title: "TALENT AND INNOVATION PILLAR",
     content:
       "Under Director Julius Mutugi Talent and innovation as a pillar in vijana tubonge organisation gives the youth a chance to think outside the box and allows them to develop new ideas that are in line with the current era of technological  advancement",
-    btn_link: "intagram.com",
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: "Learn More",
     image_url: Innovation,
   },
@@ -17,7 +17,7 @@ const data = [
     title: " CHARITY PILLAR  ",
     content:
       "Our charity pillar under Director Carol Wamuyu serves the most vulnerable in the society and ensures that peoples’ human rights and needs are met. We have distributed sanitary towels to the less privileged in different villages in Tebere ward and recently through the Nilishe Charity Event, we have fed street kids and given them Christmas gift hampers.",
-    btn_link: "",
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: " Learn More",
     image_url: Chapters,
   },
@@ -25,8 +25,7 @@ const data = [
     title: "MENTORSHIP PILLAR",
     content:
       "Under his leadership Director Kevin Gitimu, aims at touching three aspects of the human life which are; the social, economic and the civil aspect. It will attain this by holding mentorship talks in schools both primary and secondary, organizing seminars on savings and financial literacy, and also civic education on human rights, the constitution, leadership among other vital information.",
-    btn_link: "",
-
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: "Learn More",
     image_url: Mentorship,
   },
@@ -34,7 +33,7 @@ const data = [
     title: "THE HEALTH PILLAR",
     content:
       "Headed by Director Mary Mwangi aims at promoting the overall well-being and healthy living through early detection and prevention of diseases like cancer and HIV, treatment of patients and vaccinations of covid 19, issuing of PREP and PEP, distribution of sanitary towels as well as sanitary packets for boys and sparking uncomfortable conversations surrounding mental health, sexual reproductive health and gender-based violence. ",
-    btn_link: "",
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: "Learn More",
     image_url: Health,
   },
@@ -42,7 +41,7 @@ const data = [
     title: "THE ENVRONMENT PILLAR.",
     content:
       "Under her leadership Director Prudence Gichuki. The pillar’s major focus is on creating awareness about nature and making the environment greener and cleaner. So far, in the month of December 2021, when the pillars were created, the environment pillar had planted 40 trees at the river bank of River Thiba, and a further 60 trees in S.Ngariama, totaling to 100 trees. Plans are underway for creation of carbon sinks, rehabilitation of forests and water catchment areas, promoting greener and cleaner sources of energy and general greening of the earth",
-    btn_link: "intagram.com",
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: "Learn More",
     image_url: Environment,
   },
@@ -50,6 +49,7 @@ const data = [
     title: "CHAPTERS PILLAR",
     content:
       "The Chapters Pillar under Vijana Tubonge will create a safe space where the diversity of life thrives through outreach of the Vijana Tubonge, which promotes Environment, health, charity, mentorship, talent and innovation aspects of life",
+    btn_link: "https://www.instagram.com/vijana_tubongeke/",
     btn_caption: "Learn More",
     image_url: Chapters,
   },
@@ -66,7 +66,10 @@ const AboutUs = () => {
   const cards =
     data &&
     data.map((itms, index) => (
-      <div key={index} className="flex flex-col items-center text-center aspect-square sm:mx-8 shadow-lg p-6">
+      <div
+        key={index}
+        className="flex flex-col items-center text-center aspect-square sm:mx-8 shadow-lg p-6"
+      >
         <p className="lg:text-2xl text-teal-600 font-bold ">
           {itms.title.toUpperCase()}
         </p>
@@ -81,6 +84,8 @@ const AboutUs = () => {
         </p>
         <a
           href={itms.btn_link}
+          target="_blank"
+          rel="noreferrer"
           className="mt-5 mb-2 rounded-md shadow lg:w-auto flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white bg-teal-700 hover:bg-gray-300 md:py-4 md:text-lg md:px-10 px-4 py-2"
         >
           {itms.btn_caption.toUpperCase()}
