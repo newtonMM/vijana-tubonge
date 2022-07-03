@@ -10,7 +10,6 @@ const data = [
     link: "#home",
     current: true,
   },
-
   {
     name: "About us ",
     link: "#about_us",
@@ -23,11 +22,11 @@ const data = [
     link: "#contacts",
     current: false,
   },
-  {
-    name: "Blog",
-    link: "#blog",
-    current: false,
-  },
+  // {
+  //   name: "Blog",
+  //   link: "#blog",
+  //   current: false,
+  // },
 ];
 
 const Navbar = () => {
@@ -35,13 +34,13 @@ const Navbar = () => {
     return classes.filter(Boolean).join(" ");
   }
 
-  const [activeLink, setActiveLink] = useState('')
+  const [activeLink, setActiveLink] = useState("");
 
-  const location = useLocation()
+  const location = useLocation();
 
   useEffect(() => {
-    setActiveLink(location.hash)
-  }, [location])
+    setActiveLink(location.hash);
+  }, [location]);
 
   return (
     <Disclosure as="nav" className="h-24 bg-white sticky top-0 z-50">
@@ -57,7 +56,7 @@ const Navbar = () => {
                   <img
                     className="h-20 w-20 mr-20  text-blue-400"
                     src={Logo}
-                    alt='logo'
+                    alt="logo"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -72,10 +71,10 @@ const Navbar = () => {
                       className={classNames(
                         activeLink === itms.link
                           ? "text-teal-600 underline decoration-blue-600 underline-offset-8	decoration-4"
-                          : "text-teal-700 font-sans  hover:bg-gray-200  transition duration-300",
+                          : "text-teal-700 font-sans hover:underline no-underline decoration-blue-600 hover:underline-offset-8 hover:decoration-4 transition duration-700 ease-in-out",
                         "px-4 py-3  ml-5 md:px-1 font-bold lg:text-xl md:text-base whitespace-nowrap"
                       )}
-                      aria-current={itms.current ? "page" : undefined}
+                      aria-current={activeLink === itms.link ? "page" : undefined}
                     >
                       {itms.name.toUpperCase()}
                     </a>
@@ -83,7 +82,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="hidden md:flex items-center space-x-1">
+              {/* <div className="hidden md:flex items-center space-x-1">
                 <a href="/#" className="py-5 px-3 text-teal-700">
                   Login
                 </a>
@@ -93,7 +92,7 @@ const Navbar = () => {
                 >
                   Signup
                 </a>
-              </div>
+              </div> */}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
